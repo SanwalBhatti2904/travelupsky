@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage — Travel Menu</title>
+
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Mona+Sans:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ============ MENU OVERLAY ============ -->
+        <div class="menu-overlay">
+            <div class="menu-overlay__bg-container" aria-hidden="true">
+                <div class="menu-overlay__bg-img"><img src="assets/bg-1.webp" data-bg-for="default" alt=""></div>
+                <div class="menu-overlay__bg-img"><img src="assets/bg-2.webp" data-bg-for="home" alt=""></div>
+                <div class="menu-overlay__bg-img"><img src="assets/bg-3.webp" data-bg-for="about" alt=""></div>
+                <div class="menu-overlay__bg-img"><img src="assets/bg-4.webp" data-bg-for="explore" alt=""></div>
+                <div class="menu-overlay__bg-img"><img src="assets/bg-5.webp" data-bg-for="services" alt=""></div>
+                <div class="menu-overlay__bg-img"><img src="assets/bg-6.webp" data-bg-for="contact" alt=""></div>
+            </div>
+
+            <div class="menu-overlay__content">
+                <div class="menu-overlay__links">
+                    <nav class="menu-overlay__main" aria-label="Main navigation">
+                        <ul>
+                            <li><a href="/" data-text-anim>HOME</a></li>
+                            <li><a href="/" data-text-anim>ABOUT US</a></li>
+                            <li><a href="/" data-text-anim>EXPLORE TRIPS</a></li>
+                            <li><a href="/" data-text-anim>SERVICES</a></li>
+                            <li><a href="/" data-text-anim>CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-overlay__socials">
+                        <ul>
+                            <li><a href="/">Instagram</a></li>
+                            <li><a href="/">TikTok</a></li>
+                            <li><a href="/">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============ NAVBAR ============ -->
+        <header class="navbar">
+            <nav class="wrapper">
+                <div class="menu-bar">
+                    <div class="logo-wrapper">
+                        <img src="assets/logo.svg" alt="Voyage">
+                    </div>
+                    <div class="navbar__menu" id="menu-toggle" role="button" tabindex="0" aria-label="Toggle menu"
+                        aria-expanded="false">
+                        <span class="toggle-line-top"></span>
+                        <span class="toggle-line-bottom"></span>
+                    </div>
+                    <a href="#" class="navbar__btn btn">
+                        <span class="btn-txt">EXPLORE TRIPS</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="none">
+                            <path fill="#2F2411"
+                                d="m17.76 6.857-5.727-5.688a.821.821 0 0 0-1.147.01.81.81 0 0 0-.01 1.139l4.33 4.3H.819a.821.821 0 0 0-.578.238.81.81 0 0 0 .578 1.388h14.389l-4.33 4.3a.813.813 0 0 0-.19.892.813.813 0 0 0 .765.505.824.824 0 0 0 .581-.248l5.727-5.688a.81.81 0 0 0 0-1.148Z" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ============ PAGE CONTENT ============ -->
+        <div class="page-content">
+
+            <!-- ============ HERO ============ -->
+            <section id="hero-section">
+                <div class="wrapper">
+                    <h1 class="hero__header">
+                        Find Your Way to Anywhere in the world
+                    </h1>
+                    <div class="hero__cta">
+                        <img src="assets/accent-element.svg" alt="">
+                        <p class="cta__txt">
+                            From cityscapes to beaches, we guide you. We handle details so you can focus on getting
+                            lost in the moment.
+                        </p>
+                        <a href="#" class="cta__btn btn">
+                            <span class="btn-txt">EXPLORE TRIPS</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="none">
+                                <path fill="#fff"
+                                    d="m17.76 6.857-5.727-5.688a.821.821 0 0 0-1.147.01.81.81 0 0 0-.01 1.139l4.33 4.3H.819a.821.821 0 0 0-.578.238.81.81 0 0 0 .578 1.388h14.389l-4.33 4.3a.813.813 0 0 0-.19.892.813.813 0 0 0 .765.505.824.824 0 0 0 .581-.248l5.727-5.688a.81.81 0 0 0 0-1.148Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ CAROUSEL — EXPLORE THE WORLD ============ -->
+            <section class="carousel-section">
+                <div class="carousel-bg">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1920&q=80"
+                        alt="Mountain landscape">
+                    <div class="carousel-bg-overlay"></div>
+                </div>
+
+                <div class="carousel-sticky-content">
+                    <div class="carousel-content-wrapper">
+                        <div class="carousel-left">
+                            <p class="subtitle">Destinations</p>
+                            <h2 class="carousel-title">EXPLORE THE<br>WORLD.</h2>
+                            <p class="carousel-desc">
+                                Handpicked destinations, private guides and itineraries designed around
+                                your rhythm. Every journey is a story waiting to be told.
+                            </p>
+                            <button class="discover-btn">VIEW ALL TOURS</button>
+                        </div>
+
+                        <div class="carousel-right">
+                            <div class="carousel-card active">
+                                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&q=80"
+                                    alt="Tuscany">
+                                <div class="card-label">TUSCANY</div>
+                            </div>
+                            <div class="carousel-card">
+                                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80"
+                                    alt="Kyoto">
+                                <div class="card-label">KYOTO</div>
+                            </div>
+                            <div class="carousel-card">
+                                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800&q=80"
+                                    alt="Santorini">
+                                <div class="card-label">SANTORINI</div>
+                            </div>
+                            <div class="carousel-card">
+                                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80"
+                                    alt="Machu Picchu">
+                                <div class="card-label">MACHU PICCHU</div>
+                            </div>
+                            <div class="carousel-card">
+                                <img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=800&q=80"
+                                    alt="Iceland">
+                                <div class="card-label">ICELAND</div>
+                            </div>
+                            <div class="carousel-card">
+                                <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&q=80"
+                                    alt="Marrakech">
+                                <div class="card-label">MARRAKECH</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-footer">
+                        <div class="timeline-container">
+                            <div class="timeline-progress"></div>
+                        </div>
+                        <div class="slide-counter">
+                            <span class="current">01</span> <span class="total">/ 06</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ BENTO GRID SECTION ============ -->
+            <section class="bento-section">
+                <div class="bento-container">
+
+                    <div class="bento-col bento-col-1">
+                        <div class="bento-item bento-metric">
+                            <div class="metric-avatars">
+                                <img src="https://i.pravatar.cc/150?img=4" alt="">
+                                <img src="https://i.pravatar.cc/150?img=5" alt="">
+                            </div>
+                            <p>+653 New Travelers</p>
+                            <h2>25M</h2>
+                            <span class="metric-tag">[ Trips Planned ]</span>
+                        </div>
+                        <div class="bento-item bento-typography">
+                            <span class="main-font-badge">Voyage</span>
+                            <h1>Aa</h1>
+                            <div class="typo-bottom">
+                                <p><strong>Every trip</strong> is designed around you — from the routes
+                                    you walk to the stories you bring home.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-col bento-col-2">
+                        <div class="bento-item bento-desc">
+                            <p>Voyage is your travel concierge — smart planning, local insight
+                                and itineraries that adapt to you</p>
+                            <button class="bento-btn">Start Planning</button>
+                            <div class="pill pill-orange" style="top: 20px; right: 30px;">14 days trial</div>
+                            <div class="pill pill-white" style="top: 60px; right: 80px;">
+                                <i class="fa-solid fa-route"></i> Routes
+                            </div>
+                            <div class="pill pill-orange" style="top: 90px; right: 20px;">
+                                <i class="fa-solid fa-compass"></i> Explore
+                            </div>
+                            <div class="pill pill-white" style="top: 130px; right: 60px;">
+                                <i class="fa-solid fa-map"></i> Maps
+                            </div>
+                        </div>
+                        <div class="bento-item bento-logo">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <div class="bento-item bento-colors">
+                            <div class="color-bar" style="background: #ffad3b;"></div>
+                            <div class="color-bar" style="background: #2f2411;"></div>
+                            <div class="color-bar" style="background: #ffd08e;"></div>
+                        </div>
+                        <div class="bento-item bento-users">
+                            <h3>12K</h3>
+                            <p>happy travelers</p>
+                            <div class="user-avatars">
+                                <img src="https://i.pravatar.cc/150?img=6" alt="">
+                                <img src="https://i.pravatar.cc/150?img=7" alt="">
+                                <button class="plus-btn"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-col bento-col-3">
+                        <div class="bento-item bento-portrait">
+                            <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=900&q=80"
+                                alt="Traveler portrait">
+                        </div>
+                        <div class="bento-item bento-oren">
+                            <div class="oren-glow"></div>
+                            <h2><i class="fa-solid fa-star"></i> voyage</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- BEACH SECTION                              -->
+            <!-- Main frame holds the beach image full-bleed, -->
+            <!-- inner card is split: frost | clear         -->
+            <!-- ========================================== -->
+            <section class="beach-section">
+                <div class="beach-frame">
+
+                    <!-- Full-bleed beach image behind everything -->
+                    <img class="beach-frame__bg" src="assets/beach.jpg" alt="Golden sand beach at sunset">
+                    <div class="beach-frame__overlay"></div>
+
+                    <!-- Inner card with two halves -->
+                    <div class="beach-glass">
+
+                        <!-- LEFT: frosted glass side -->
+                        <div class="beach-glass__frost">
+
+                            <!-- Header -->
+                            <div class="beach-glass__header">
+                                <button class="beach-hamburger" aria-label="Open menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <span class="beach-glass__eyebrow">About life and beaches</span>
+                            </div>
+
+                            <!-- Middle content -->
+                            <div class="beach-glass__content">
+                                <h2 class="beach-glass__title">Enjoy<br>Nature</h2>
+
+                                <h3 class="beach-glass__subtitle">Golden shores</h3>
+
+                                <p class="beach-glass__text">
+                                    Pale sand stretches for miles beneath an amber sky, where turquoise
+                                    water folds into foam against the shore. The air is salt and warmth,
+                                    and the day dissolves slowly into the sea — a quiet kind of luxury
+                                    that only the coast can give you.
+                                </p>
+                                <p class="beach-glass__text">
+                                    Every sunset here is a story of its own, painted in shades of coral,
+                                    honey and rose — impossible to plan, impossible to forget.
+                                </p>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="beach-glass__footer">
+                                <span class="beach-glass__tagline">Connect with nature</span>
+                                <div class="beach-glass__actions">
+                                    <a href="#" class="beach-pill beach-pill--ghost">type of host</a>
+                                    <a href="#" class="beach-pill beach-pill--solid">gallery</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT: clear side — image shows through untouched -->
+                        <div class="beach-glass__clear" aria-hidden="true"></div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ FOOTER ============ -->
+            <footer class="site-footer">
+                <div class="wrapper">
+                    <div class="site-footer__top">
+                        <div class="site-footer__brand">
+                            <img src="assets/logo.svg" alt="Voyage" class="site-footer__logo">
+                            <p class="site-footer__tagline">
+                                Handcrafted journeys for curious travelers — every detail, every route, every story.
+                            </p>
+                        </div>
+
+                        <div class="site-footer__nav">
+                            <div class="site-footer__col">
+                                <h4>Explore</h4>
+                                <ul>
+                                    <li><a href="#">Destinations</a></li>
+                                    <li><a href="#">Tours</a></li>
+                                    <li><a href="#">Journal</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-footer__col">
+                                <h4>Company</h4>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="site-footer__col">
+                                <h4>Legal</h4>
+                                <ul>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="site-footer__socials">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="site-footer__bottom">
+                        <p>© 2025 Voyage Travel Co. All rights reserved.</p>
+                        <div class="site-footer__legal">
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div><!-- /.page-content -->
+
+    </div><!-- /.container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
